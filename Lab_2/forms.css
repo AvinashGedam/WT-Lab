@@ -1,0 +1,72 @@
+body, div, form, input, select, textarea, label { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+form {
+    width: 60%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 8px  #cc7a00; 
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+header {
+    padding: 40px;
+    background-color: #ce8b26;
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+
+.name-item input, .name-item div {
+    width: calc(50% - 20px);
+}
+.name-item div input {
+    width:97%;
+}
+.name-item div label {
+    display:block;
+    padding-bottom:5px;
+}
+
+.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+    color: #cc7a00;
+}
+
+.item input:hover, .item select:hover, .item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0 #cc7a00;
+    color: #cc7a00;
+}
+
+span {
+    color: red;
+}

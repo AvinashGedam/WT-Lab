@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="forms.css">
+    
+  </head>
+  <body>
+    <div class="testbox">
+    <form action="" >
+      <header><h1>Student Details</h1></header>
+      <h2>Personal Information</h2>
+
+      <div class="item">
+        <label for="name">Name<span>*</span></label>
+        <div class="name-item">
+          <input id="name" type="text" name="name" placeholder="First" />
+          <input type="text" name="name" placeholder="Last" />
+        </div>
+      </div>
+
+      <div class="item">
+          <label for="email">Email<span>*</span></label>
+          <input id="name" type="email" name="email"/>
+      </div>
+        
+      <p>Phone Number:<span>*</span><input type="text" name="number" required /></p>
+
+      <p>
+        Male <input type="radio" name="gender" id="male" /> Female
+        <input type="radio" name="gender" id="female" />
+      </p>
+      
+      <p>
+        Address:
+        <textarea name="address" id="address" cols="100" rows="8"></textarea>
+      </p>
+      <p>Pincode: <input type="number" name="pincode" id="pincode" /></p>
+
+      <p>
+        Date of Birth:
+        <input id="bdate" type="date" name="bdate" required/>
+      </p>
+
+      <p>
+        Blood Group:
+        <select name="card_type" id="card_type">
+          <option value="">-- Select --</option>
+          <option value="">A+</option>
+          <option value="">A-</option>
+          <option value="">B+</option>
+          <option value="">B-</option>
+          <option value="">O+</option>
+          <option value="">O-</option>
+          <option value="">AB+</option>
+          <option value="">AB-</option>
+        </select>
+      </p>
+
+
+      <hr />
+      <h2>Parents' Information</h2>
+      <h3>Father</h3>
+      <p>Name:<span>*</span><input type="text" name="name" required /></p>
+      <p>Email: <span>*</span><input type="text" name="email" required /></p>
+      <p>
+        Profession:
+        <select name="card_type" id="card_type">
+          <option value="">-- Select --</option>
+          <option value="">Service</option>
+          <option value="">Business</option>
+          <option value="">Other</option>
+        </select>
+      </p>
+
+      <h3>Mother</h3>
+      <p>Name:<span>*</span><input type="text" name="name" required /></p>
+      <p>Email:<span>*</span><input type="text" name="email" required /></p>
+      <p>
+        Profession:
+        <select name="card_type" id="card_type">
+          <option value="">-- Select --</option>
+          <option value="">Service</option>
+          <option value="">Business</option>
+          <option value="">Other</option>
+        </select>
+      </p>
+      
+
+      <hr />
+      <h2>Academics</h2>
+      <p>Branch:<span>*</span><input type="text" name="name" required /></p>
+      <p>Year:<span>*</span><input type="text" name="name" required /></p>
+      <p>Gr. Number:<span>*</span><input type="text" name="name" required /></p>
+      <p>Roll Number: <input type="text" name="name" required /></p>
+      <p>
+        Semester Number:
+        <select name="card_type" id="card_type">
+          <option value="">-- Select --</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+        </select>
+      </p>
+      <p>
+        Division:
+        <select name="card_type" id="card_type">
+          <option value="">-- Select --</option>
+          <option value="">A</option>
+          <option value="">B</option>
+          <option value="">C</option>
+          <option value="">D</option>
+        </select>
+      </p>
+      
+
+    </form>
+    </div>
+  </body>
+</html>
