@@ -19,37 +19,52 @@
       <div class="item">
         <label for="name">Name<span>*</span></label>
         <div class="name-item">
-          <input id="name" type="text" name="name" placeholder="First" />
-          <input type="text" name="name" placeholder="Last" />
+          <input id="name" type="text" placeholder="First" required/>
+          <input type="text" placeholder="Last" required/>
         </div>
       </div>
 
       <div class="item">
-          <label for="email">Email<span>*</span></label>
-          <input id="name" type="email" name="email"/>
+        <label for="email">Email<span>*</span></label>
+        <input id="email" type="email" required/>
       </div>
         
-      <p>Phone Number:<span>*</span><input type="text" name="number" required /></p>
+      <div class="item">
+        <label for="phone">Phone Number<span>*</span></label>
+        <input id="phone" type="text" required/>
+      </div>
 
-      <p>
-        Male <input type="radio" name="gender" id="male" /> Female
-        <input type="radio" name="gender" id="female" />
-      </p>
+      <!-- <div class="gender">
+        <label>Gender</label>
+          <div>
+            <input type="radio" value="none" id="radio_1"/>
+            <label for="radio_1" class="radio"><span>Male</span></label>
+          </div>
+          <div>
+            <input type="radio" value="none" id="radio_2"/>
+            <label for="radio_2" class="radio"><span>Female</span></label>
+          </div>
+      </div> -->
       
-      <p>
-        Address:
-        <textarea name="address" id="address" cols="100" rows="8"></textarea>
-      </p>
-      <p>Pincode: <input type="number" name="pincode" id="pincode" /></p>
 
-      <p>
-        Date of Birth:
-        <input id="bdate" type="date" name="bdate" required/>
-      </p>
+      <div class="item">
+        <label for="address">Address</label>
+        <textarea id="address" rows="3"></textarea>
+      </div>
 
-      <p>
-        Blood Group:
-        <select name="card_type" id="card_type">
+      <div class="item">
+        <label for="pincode">Pincode<span>*</span></label>
+        <input id="pincode" type="text" required/>
+      </div>
+
+      <div class="item">
+        <label for="bdate">Date of Birth<span>*</span></label>
+        <input id="bdate" type="date" required/>
+      </div>
+
+      <div class="item">
+        <label for="bgrp">Blood Group<span>*</span></label>
+        <select id="bgrp">
           <option value="">-- Select --</option>
           <option value="">A+</option>
           <option value="">A-</option>
@@ -60,47 +75,89 @@
           <option value="">AB+</option>
           <option value="">AB-</option>
         </select>
-      </p>
+      </div>
 
 
-      <hr />
       <h2>Parents' Information</h2>
       <h3>Father</h3>
-      <p>Name:<span>*</span><input type="text" name="name" required /></p>
-      <p>Email: <span>*</span><input type="text" name="email" required /></p>
-      <p>
-        Profession:
-        <select name="card_type" id="card_type">
+      <div class="item">
+        <label for="name">Name<span>*</span></label>
+        <div class="name-item">
+          <input id="name" type="text" placeholder="First" required/>
+          <input type="text" placeholder="Last" required/>
+        </div>
+      </div>
+
+      <div class="item">
+        <label for="email">Email<span>*</span></label>
+        <input id="email" type="email" required/>
+      </div>
+        
+      <div class="item">
+        <label for="phone">Phone Number<span>*</span></label>
+        <input id="phone" type="text" required/>
+      </div>
+      <div class="item">
+        <label for="prof_father">Profession<span>*</span></label>
+        <select id="prof_father">
           <option value="">-- Select --</option>
           <option value="">Service</option>
           <option value="">Business</option>
           <option value="">Other</option>
         </select>
-      </p>
+      </div>
 
       <h3>Mother</h3>
-      <p>Name:<span>*</span><input type="text" name="name" required /></p>
-      <p>Email:<span>*</span><input type="text" name="email" required /></p>
-      <p>
-        Profession:
-        <select name="card_type" id="card_type">
+      <div class="item">
+        <label for="name">Name<span>*</span></label>
+        <div class="name-item">
+          <input id="name" type="text" placeholder="First" required/>
+          <input type="text" placeholder="Last" required/>
+        </div>
+      </div>
+
+      <div class="item">
+        <label for="email">Email<span>*</span></label>
+        <input id="email" type="email" required/>
+      </div>
+        
+      <div class="item">
+        <label for="phone">Phone Number<span>*</span></label>
+        <input id="phone" type="text" required/>
+      </div>
+      <div class="item">
+        <label for="prof_mother">Profession<span>*</span></label>
+        <select id="prof_mother">
           <option value="">-- Select --</option>
           <option value="">Service</option>
           <option value="">Business</option>
           <option value="">Other</option>
         </select>
-      </p>
+      </div>
       
 
-      <hr />
+      
       <h2>Academics</h2>
-      <p>Branch:<span>*</span><input type="text" name="name" required /></p>
-      <p>Year:<span>*</span><input type="text" name="name" required /></p>
-      <p>Gr. Number:<span>*</span><input type="text" name="name" required /></p>
-      <p>Roll Number: <input type="text" name="name" required /></p>
-      <p>
-        Semester Number:
-        <select name="card_type" id="card_type">
+      <div class="item">
+        <label for="branch">Branch<span>*</span></label>
+        <input id="branch" type="text" required/>
+      </div>
+      <div class="item">
+        <label for="year">Year<span>*</span></label>
+        <input id="year" type="text" required/>
+      </div>
+      <div class="item">
+        <label for="grn">Gr. Number<span>*</span></label>
+        <input id="grn" type="text" required/>
+      </div>
+      <div class="item">
+        <label for="rollnum">Roll Number<span>*</span></label>
+        <input id="rollnum" type="text" required/>
+      </div>
+
+      <div class="item">
+        <label for="semester">Semester<span>*</span></label>
+        <select id="semester">
           <option value="">-- Select --</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -111,18 +168,21 @@
           <option value="">7</option>
           <option value="">8</option>
         </select>
-      </p>
-      <p>
-        Division:
-        <select name="card_type" id="card_type">
+      </div>
+      <div class="item">
+        <label for="division">Division<span>*</span></label>
+        <select id="division">
           <option value="">-- Select --</option>
           <option value="">A</option>
           <option value="">B</option>
           <option value="">C</option>
           <option value="">D</option>
         </select>
-      </p>
+      </div>
       
+      <div class="btn-block">
+        <button type="submit" href="/">Send</button>
+      </div>
 
     </form>
     </div>
